@@ -1,6 +1,6 @@
 package ExcelReadWrite;
 
-public class Row
+public class ExcelRowPOJO
 {
     String Name;
     String Gender;

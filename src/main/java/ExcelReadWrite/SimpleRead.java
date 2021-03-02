@@ -11,11 +11,10 @@ import java.util.List;
 
 public class SimpleRead
 {
-    //public static void main(String[] args) throws IOException
-    public List<Row> getListOfRows() throws IOException
+    public List<ExcelRowPOJO> getListOfRows() throws IOException
     {
-        List<Row> rowList = new ArrayList<Row>();
-        Row row = new Row();
+        List<ExcelRowPOJO> rowList = new ArrayList<ExcelRowPOJO>();
+        ExcelRowPOJO row = new ExcelRowPOJO();
         List<String> tempList;
 
         File file = new File("/Users/shoaibshaikh/Documents/Automation-Read-Demo.xlsx");
@@ -42,7 +41,7 @@ public class SimpleRead
             row.setCountry(tempList.get(3));
 
             rowList.add(i-1,row); // Add each row to Row List
-            row = new Row(); // Reset row class reference
+            row = new ExcelRowPOJO(); // Reset row class reference
         }
 
         return rowList;
