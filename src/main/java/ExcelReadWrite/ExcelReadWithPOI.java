@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SimpleRead
+public class ExcelReadWithPOI
 {
     public List<ExcelRowPOJO> getListOfRows() throws IOException
     {

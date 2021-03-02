@@ -6,7 +6,7 @@ public class Runner
 {
     public static void main(String[]args) throws IOException
     {
-        SimpleRead collectedData = new SimpleRead();
+        ExcelReadWithPOI collectedData = new ExcelReadWithPOI();
         int numberOfRows = collectedData.getListOfRows().size();
         int currentRowCount;
 
