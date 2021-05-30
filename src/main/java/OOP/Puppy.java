@@ -1,4 +1,4 @@
-package Basics;
+package OOP;
 
 public class Puppy
 {
@@ -6,10 +6,6 @@ public class Puppy
     String puppyName;
     String puppyBreed;
 
-//    public Puppy(String name)
-//    {
-//        System.out.println("Puppy name is: "+name);
-//    }
 
     public void setPuppyAge(int age)
     {
@@ -46,5 +42,24 @@ public class Puppy
         System.out.println("Puppy age: "+puppyAge);
         System.out.println("Puppy name: "+puppyName);
         System.out.println("Puppy breed: "+puppyBreed);
+    }
+
+    public static void main(String[] args)
+    {
+        Puppy pup1 = new Puppy();
+        Puppy pup2 = new Puppy();
+
+        pup1.setPuppyAge(2);
+        pup1.setBreed("Labrador");
+        pup1.setPuppyName("Tommy");
+
+        pup2.setPuppyAge(3);
+        pup2.setPuppyName("Bruno");
+        pup2.setBreed("Great Den");
+
+
+        pup2.printPup();
+
+
     }
 }

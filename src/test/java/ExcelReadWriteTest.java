@@ -1,10 +1,13 @@
-package ExcelReadWrite;
+import ExcelReadWrite.ExcelReadWithPOI;
+import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 
-public class RunnerDemo
+public class ExcelReadWriteTest
 {
-    public static void main(String[]args) throws IOException
+    //public static void main(String[]args) throws IOException
+    @Test
+    public void getPet() throws IOException
     {
         ExcelReadWithPOI collectedData = new ExcelReadWithPOI();
         int numberOfRows = collectedData.getListOfRows().size();

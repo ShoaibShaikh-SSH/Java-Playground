@@ -17,7 +17,7 @@ public class ExcelReadWithPOI
         ExcelRowPOJO row = new ExcelRowPOJO();
         List<String> tempList;
 
-        File file = new File("/Users/shoaibshaikh/Documents/Automation-Read-Demo.xlsx");
+        File file = new File("src/main/resources/Automation-Read-Demo.xlsx");
         FileInputStream inputStream = new FileInputStream(file);
 
         XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
